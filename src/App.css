@@ -1,5 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  gap: 30px;
 }
 
 .App-logo {
@@ -35,4 +38,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.carousel{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.carousel-img{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
