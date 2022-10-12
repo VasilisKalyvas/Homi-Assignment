@@ -24,10 +24,8 @@ const Filtering = ({setItems, setSortAscent, setSortDiscent}) => {
   const handleShow = () => setShow(true);
 
   const submitHandler = () => {
-    console.log(searchInput);
     const returningValue = SearchOperation(searchInput);
     setItems(returningValue);
-    setSearchInput("");
   }
 
   const handleSubmitFilter = () => {
