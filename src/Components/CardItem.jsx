@@ -17,7 +17,6 @@ const CardItem = ({data}) => {
   const [items, setItems] = useState(data)
   const [sortADiscent, setSortDiscent] = useState(false);
   const [sortAscent, setSortAscent] = useState(false);
-  console.log(items)
   return (
     <>
       <Filtering setItems={setItems} setSortAscent={setSortAscent} setSortDiscent={setSortDiscent}/>

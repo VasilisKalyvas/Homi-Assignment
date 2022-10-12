@@ -19,6 +19,7 @@ import Button from 'react-bootstrap/esm/Button';
 const SingleItem = () => {
   const [item, setItem] = useState({})
   const idFromPath = useLocation().pathname.split("/")[1];
+  
   useEffect(() =>{
     const findItem = data.find((item) => (idFromPath === item.listing_id.toString()))
     setItem(findItem)

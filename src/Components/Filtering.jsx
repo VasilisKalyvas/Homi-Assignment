@@ -14,7 +14,7 @@ import { GrPowerReset } from '@react-icons/all-files/gr/GrPowerReset';
 
 const Filtering = ({setItems, setSortAscent, setSortDiscent}) => {
   const [show, setShow] = useState(false);
-  const [searchInput, setSearchInput] = useState();
+  const [searchInput, setSearchInput] = useState('');
   const [yearFrom, setYearFrom] = useState();
   const [yearUntil, setYearUntil] = useState();
   const [type, setType] = useState();
@@ -24,10 +24,8 @@ const Filtering = ({setItems, setSortAscent, setSortDiscent}) => {
   const handleShow = () => setShow(true);
 
   const submitHandler = () => {
-    console.log(searchInput);
-    const returningValue = SearchOperation(searchInput);
-    setItems(returningValue);
-    setSearchInput("");
+      const returningValue = SearchOperation(searchInput);
+      setItems(returningValue);
   }
 
   const handleSubmitFilter = () => {
