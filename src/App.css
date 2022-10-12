@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: center;
   gap: 30px;
+  height: 100vh;
 }
  body{
   min-height: 100vh;
@@ -23,5 +24,8 @@
   min-width: 0;
 }
 .footer{
-  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
 }
