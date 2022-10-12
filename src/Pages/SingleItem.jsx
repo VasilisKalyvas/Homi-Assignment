@@ -25,7 +25,7 @@ const SingleItem = () => {
   },[idFromPath])
 
   return (
-    <Container>
+    <Container style={{height: '100%'}}>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: '50px'}}>
         <Carousel className='carousel' style={{width: '500px'}}>
           <Carousel.Item>
