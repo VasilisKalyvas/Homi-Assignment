@@ -25,7 +25,7 @@ const SingleItem = () => {
   },[idFromPath])
 
   return (
-    <Container style={{height: '100%'}}>
+    <Container>
       <div style={{display: 'flex', flexWrap: 'wrap', gap: '50px'}}>
         <Carousel className='carousel' style={{width: '500px'}}>
           <Carousel.Item>
@@ -79,10 +79,10 @@ const SingleItem = () => {
                   <div>wc : {item.wc}</div>
                 </div>
                 <div style={{display: 'flex',gap: '20px'}}>
-                  <Badge bg='primary' style={{display: 'flex', width: '100px', justifyContent: 'center'}}>
+                  <Badge bg='primary' style={{display: 'flex', width: 'auto', justifyContent: 'center'}}>
                     <div style={{fontSize: '15px'}}>{item.property_category}</div>
                   </Badge>
-                  <Badge bg='success' style={{ display: 'flex', width: '100px', justifyContent: 'center'}}>
+                  <Badge bg='success' style={{ display: 'flex', width: 'auto', justifyContent: 'center'}}>
                     <div style={{fontSize: '15px'}}>{item.property_subcategory}</div>
                   </Badge>
                 </div>

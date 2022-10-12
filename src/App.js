@@ -15,9 +15,7 @@ function App() {
               <Route path="/:id" element={<SingleItem />}></Route>
             </Routes>
        </BrowserRouter>
-       <footer className="mt-auto" style={{padding: '10px'}}>
-        <Footer/>
-       </footer>
+      <Footer/>
     </div>
   );
 }
