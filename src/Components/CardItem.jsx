@@ -68,15 +68,15 @@ const CardItem = ({data}) => {
                                 <i style={{color:'gray'}}>{(parseFloat(item.price)/parseFloat(item.size)).toFixed(2)}$ per m²</i>
                               </div>
                               <div style={{ display: 'flex', gap:'8px'}}>
-                                <div><FaHome/> {item.size} m²</div>
-                                <div><IoIosBed/> {item.bedrooms}</div>
-                                <div><FaBath/> {item.bathrooms}</div>
-                                <div><MdKitchen/> {item.kitchens}</div>
-                                <div><GiSofa/> {item.living_rooms}</div>
+                                <div><span><FaHome/> {item.size} m²</span></div>
+                                <div><span><IoIosBed/> {item.bedrooms}</span></div>
+                                <div><span><FaBath/> {item.bathrooms}</span></div>
+                                <div><span><MdKitchen/> {item.kitchens}</span></div>
+                                <div><span><GiSofa/> {item.living_rooms}</span></div>
                               </div>
                               <div style={{ display: 'flex', gap:'8px'}}>
-                                <div><IoIosConstruct/> {item.construction_year}</div>
-                                <div><GiStairs/> {item.floor}</div>
+                                <div><span><IoIosConstruct/> {item.construction_year}</span></div>
+                                <div><span><GiStairs/> {item.floor}</span></div>
                               </div>
                             </Card.Text>
                           </Card.Body>

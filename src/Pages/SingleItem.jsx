@@ -54,37 +54,37 @@ const SingleItem = () => {
             />
           </Carousel.Item>
         </Carousel>
-        <Card style={{width: '500px', height: '280px', marginTop: '30px'}}>
+        <Card style={{width: '500px', height: '320px', marginTop: '30px'}}>
           <Card.Header>Details</Card.Header>
           <Card.Body>
             <Card.Text style={{display: 'flex', gap: '20px'}}>
               <div style={{display: 'flex', flexDirection: 'column', gap: '10px'}}>
                 <div style={{display: 'flex',gap: '20px'}}>
-                  <div><FaMapMarkerAlt/> {item.street_name}, {item.suburb}</div>
+                  <div><span><FaMapMarkerAlt/> {item.street_name}, {item.suburb}</span></div>
                 </div>
                 <div style={{display: 'flex', flexDirection: 'column'}}>
-                  <div style={{display: 'flex', gap: '15px'}}><span>ID :</span> {item.listing_id}</div>
-                  <div style={{display: 'flex', gap: '15px'}}><span>Construction Year:</span> {item.construction_year}</div>
-                  <div style={{display: 'flex', gap: '15px'}}><span>Renovation Year:</span> {item.renovation_year}</div>
+                  <div style={{display: 'flex', gap: '15px'}}><span>ID :{item.listing_id}</span> </div>
+                  <div style={{display: 'flex', gap: '15px'}}><span>Construction Year: {item.construction_year}</span></div>
+                  <div style={{display: 'flex', gap: '15px'}}><span>Renovation Year: {item.renovation_year}</span></div>
                   <div style={{display: 'flex', gap: '15px'}}>
                     <span>Price: {item.price}$</span>
                       <i style={{color:'gray'}}>{(parseFloat(item.price)/parseFloat(item.size)).toFixed(2)}$ per m²</i>
                   </div>
                 </div>
                 <div style={{display: 'flex',gap: '20px'}}>
-                  <div><FaHome/> {item.size} m²</div>
-                  <div><IoIosBed/> {item.bedrooms}</div>
-                  <div><FaBath/> {item.bathrooms}</div>
-                  <div><MdKitchen/> {item.kitchens}</div>
-                  <div><GiSofa/> {item.living_rooms}</div>
-                  <div>wc : {item.wc}</div>
+                  <div><FaHome/><span> {item.size} m²</span></div>
+                  <div><IoIosBed/><span> {item.bedrooms}</span></div>
+                  <div><FaBath/><span> {item.bathrooms}</span></div>
+                  <div><MdKitchen/><span>  {item.kitchens}</span></div>
+                  <div><GiSofa/><span>  {item.living_rooms}</span></div>
+                  <div><span> wc : {item.wc}</span></div>
                 </div>
                 <div style={{display: 'flex',gap: '20px'}}>
                   <Badge bg='primary' style={{display: 'flex', width: 'auto', justifyContent: 'center'}}>
-                    <div style={{fontSize: '15px'}}>{item.property_category}</div>
+                    <div style={{fontSize: '15px'}}><span>{item.property_category}</span></div>
                   </Badge>
                   <Badge bg='success' style={{ display: 'flex', width: 'auto', justifyContent: 'center'}}>
-                    <div style={{fontSize: '15px'}}>{item.property_subcategory}</div>
+                    <div style={{fontSize: '15px'}}><span>{item.property_subcategory}</span></div>
                   </Badge>
                 </div>
               </div>
